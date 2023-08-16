@@ -186,12 +186,12 @@ class Agent:
             self.critic_optimizer.step()
         self.memory.clear()
 
-"""2. 定义训练"""
+"""定义训练"""
 import copy
 def train(cfg, env, agent):
     ''' 训练
     '''
-    print("开始训练！")
+    print("开始训练")
     rewards = []  # 记录所有回合的奖励
     steps = []
     best_ep_reward = 0 # 记录最大回合奖励
